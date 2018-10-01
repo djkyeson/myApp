@@ -9,6 +9,16 @@ export class SidebarComponent implements OnInit {
 
   constructor() { }
 
+  nav_position = 'start';
+
+  // This is used in the expansion panel example!
+  panelOpenState = false;
+
+  onTogglePosition(position: string) {
+    this.nav_position = position === 'start' ? 'end' : 'start';
+
+  }
+
   ngOnInit() {
   }
 
